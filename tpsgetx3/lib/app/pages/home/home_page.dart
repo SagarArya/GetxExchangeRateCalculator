@@ -192,7 +192,7 @@ class HomePage extends GetView<HomeController> {
                               ),
                               Obx(
                                 () => Text(
-                                    "1 ${controller.dropdownValue.value.toString()} = ${controller.ratevalue.value.toString()} MMK "),
+                                    "1 ${controller.dropdownValue.value.toString()} = ${controller.rate?.rates[controller.dropdownValue.value].toString()} MMK "),
                               ),
                               // (controller.dropdownValue.value == "USD")
                               //     ? const Text("2850 MMK x 1 USD")
